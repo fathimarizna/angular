@@ -1,0 +1,37 @@
+<mat-card class="example-card">
+    <mat-card-content>
+        <div class="header">
+            <h2>Sign Up</h2>
+        </div>
+        <form class="example-form">
+            <mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>Full Name</mat-label>
+                <input type="name" matInput [formControl]="emailFormControl" placeholder="Enter your full name">
+              </mat-form-field>
+            <mat-form-field class="example-full-width" appearance="fill">
+              <mat-label>Email</mat-label>
+              <input type="email" matInput [formControl]="emailFormControl" placeholder="Enter your email">
+            </mat-form-field>
+            <mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>Username</mat-label>
+                <input type="name" matInput [formControl]="emailFormControl" placeholder="Enter your username">
+              </mat-form-field>
+            <mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>Password</mat-label>
+                <input type="password" matInput [formControl]="emailFormControl" placeholder="Enter your password">
+              </mat-form-field>
+              <mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>Re-enter Password</mat-label>
+                <input type="password" matInput [formControl]="emailFormControl" placeholder="Re-enter your password">
+              </mat-form-field>
+                <button mat-raised-button color="primary">SignUp</button>
+                <div class="footer">
+                    <p>Already have an account?  
+                        <a [routerLink]="'/login'">Login</a>
+                    </p>
+                </div>
+          </form>
+            
+    </mat-card-content>
+</mat-card>
+
