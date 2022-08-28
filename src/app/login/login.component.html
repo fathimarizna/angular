@@ -11,8 +11,8 @@
             <mat-form-field class="example-full-width" appearance="fill">
                 <mat-label>Password</mat-label>
                 <input type="password" matInput [formControl]="emailFormControl" placeholder="Enter your password">
-              </mat-form-field>
-                <button mat-raised-button color="primary">Login</button>
+            </mat-form-field>
+                <button mat-raised-button color="primary" (click)="login()">Login</button>
                 <div class="footer">
                     <p>Don't have account?  
                         <a [routerLink]="'/signup'">SignUp</a>

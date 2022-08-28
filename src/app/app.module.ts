@@ -12,13 +12,15 @@ import { ReactiveFormsModule} from '@angular/forms';
 
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
+import { MyAccountComponent } from './my-account/my-account.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    SignupComponent
+    SignupComponent,
+    MyAccountComponent
   ],
   imports: [
     BrowserModule,
@@ -28,6 +30,7 @@ import { SignupComponent } from './signup/signup.component';
     MatButtonModule,
     MatInputModule,
     ReactiveFormsModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
